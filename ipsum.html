@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trigger a page event</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/css/uikit-core.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body class="uk-background-primary">
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li>
+          <a href="/index.html">Introduction</a>
+        </li>
+
+        <li class="uk-active">
+          <a href="/ipsum.html">Ipsums</a>
+
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li>
+                <a href="/ipsum.html#lorem"
+                   onclick="window.location.hash = '#lorem'; window.location.reload()">Lorem</a>
+              </li>
+
+              <li>
+                <a href="/ipsum.html#cupcake"
+                   onclick="window.location.hash = '#cupcake'; window.location.reload()">Cupcake</a>
+              </li>
+
+              <li>
+                <a href="/ipsum.html#pirate"
+                   onclick="window.location.hash = '#pirate'; window.location.reload()">Pirate</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="/colour.html">Colours</a>
+
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li>
+                <a href="/colour.html#all"
+                   onclick="window.location.hash = '#all'; window.location.reload()">All</a>
+              </li>
+              
+              <li>
+                <a href="/colour.html#white"
+                   onclick="window.location.hash = '#white'; window.location.reload()">White</a>
+              </li>
+              
+              <li>
+                <a href="/colour.html#blue"
+                   onclick="window.location.hash = '#blue'; window.location.reload()">Blue</a>
+              </li>
+              
+              <li>
+                <a href="/colour.html#black"
+                   onclick="window.location.hash = '#black'; window.location.reload()">Black</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="uk-navbar-right uk-visible@s">
+      <ul class="uk-navbar-nav">
+        <li>
+          <span class="uk-text-lead uk-margin-right">Trigger a page event</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div>
+    <ul class="uk-subnav-divider uk-navbar-container uk-navbar-transparent uk-flex-center uk-margin-top" uk-tab>
+      <li><a class="uk-background-default" href="#lorem">Lorem</a></li>
+      <li><a class="uk-background-default" href="#cupcake">Cupcake</a></li>
+      <li><a class="uk-background-default" href="#pirate">Pirate</a></li>
+    </ul>
+
+    <ul class="uk-switcher uk-margin">
+      <li>
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-margin-auto">
+          <h2 class="uk-card-title">Lorem</h2>
+          
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id tortor vel eros mattis porttitor. Praesent posuere placerat velit at iaculis. Duis et lobortis purus, eget imperdiet quam. Nulla quis dapibus nisi, eget vulputate mauris. Etiam eu magna vitae erat volutpat gravida. Ut id mauris sit amet odio dignissim sagittis. Phasellus sed nulla non nulla dapibus ornare eget vitae justo. In sed nulla neque. Aenean nec pulvinar erat, ac iaculis ipsum. Duis nisl tellus, dapibus vitae faucibus vitae, blandit et nibh. Nullam vitae lorem aliquam odio malesuada sagittis ut a tellus. Aliquam condimentum molestie commodo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-margin-auto">
+          <h2 class="uk-card-title">Cupcake</h2>
+          
+          <p>Marzipan jujubes jelly. Pie macaroon brownie sweet bear claw caramels gingerbread marzipan. Danish candy ice cream sweet apple pie danish apple pie muffin. Caramels sweet roll cake gummies pie jelly muffin caramels. Chocolate candy canes chocolate bar. Chocolate candy canes pie jujubes. Candy canes topping pudding.</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-margin-auto">
+          <h2 class="uk-card-title">Pirate</h2>
+          
+          <p>Careen Shiver me timbers grapple lass dead men tell no tales Sea Legs aye fire in the hole flogging clipper. Square-rigged squiffy hempen halter league Letter of Marque holystone chase starboard draft cackle fruit. Yo-ho-ho chase maroon heave to rum bucko tender walk the plank Yellow Jack Jack Ketch.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

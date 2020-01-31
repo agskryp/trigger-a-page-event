@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Trigger a page event</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/css/uikit-core.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.2.3/js/uikit.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body class="uk-background-secondary">
+  <nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left">
+      <ul class="uk-navbar-nav">
+        <li class="uk-active">
+          <a href="/index.html">Introduction</a>
+        </li>
+        
+        <li>
+          <a href="/ipsum.html">Ipsums</a>
+          
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li>
+                <a href="/ipsum.html#lorem">Lorem</a>
+              </li>
+              
+              <li>
+                <a href="/ipsum.html#cupcake">Cupcake</a>
+              </li>
+              
+              <li>
+                <a href="/ipsum.html#pirate">Pirate</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        
+        <li>
+          <a href="/colour.html">Colours</a>
+          
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li>
+                <a href="/colour.html#all"
+                   onclick="window.location.hash = '#all'; window.location.reload()">All</a>
+              </li>
+              
+              <li>
+                <a href="/colour.html#white"
+                   onclick="window.location.hash = '#white'; window.location.reload()">White</a>
+              </li>
+              
+              <li>
+                <a href="/colour.html#blue"
+                   onclick="window.location.hash = '#blue'; window.location.reload()">Blue</a>
+              </li>
+              
+              <li>
+                <a href="/colour.html#black"
+                   onclick="window.location.hash = '#black'; window.location.reload()">Black</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="uk-navbar-right uk-visible@s">
+      <ul class="uk-navbar-nav">
+        <li>
+          <span class="uk-text-lead uk-margin-right">Trigger a page event</span>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="uk-card uk-card-default uk-card-body uk-width-1-2@m uk-margin-top uk-margin-auto">
+    <h2 class="uk-card-title">Introduction</h2>
+          
+    <p>This site is to demonstrate how a little javascript can trigger a page event when visiting from another page.  You can view this demo by clicking on a link in the drop down menu.  The results will take you to the corresponding page displaying the desired content.</p>
+    
+    <p>Built almost entirely with <a href="https://getuikit.com/" target="_blank">UIkit</a> using their classes and components.  Majority of the components markup is taken directly from their examples.  There are three single pages written completely in HTML, and one line of custom CSS targeting the body background.  The only custom javascript is that to trigger the page events.</p>
+    
+    <p>To read more about the script and how it works, visit <a href="">How to trigger a page event from another page</a> on <a href="agskryp.com">agskryp.com</a>.</p>
+  </div>
+</body>
+
+</html>
